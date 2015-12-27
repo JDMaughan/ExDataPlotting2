@@ -49,7 +49,7 @@ NEICoalCombustByYear <- group_by(NEICoalCombust, year, type) %>%
 g <- ggplot(NEICoalCombustByYear, aes(year, AnnualEmission/10^6))
 
 ## Add layers and customize
-g + geom_point(size = 4, aes(color = Type)) +
+g + geom_point(size = 4) +
         geom_smooth(method = "lm", size = 1, se = F)  +
         facet_grid(. ~ Type) +
         xlab("Year") +
