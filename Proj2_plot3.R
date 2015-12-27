@@ -39,7 +39,6 @@ qplot(balEmissionByType$year, balEmissionByType$AnnualTotalForType, data=balEmis
         ylab = "PM2.5 Emissions (in tons)",
         main = "Baltimore City Emissions by Type\n")
 
-
 ## Copy graphic device to a .png file
 dev.copy(png, file = "P2_plot3.png", width = 800, height = 600)
 dev.off()
